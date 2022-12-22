@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Masjid</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!-- Css -->
+    <link rel="stylesheet" href="mycss/gaya.css">
+    <link rel="stylesheet" href="font/DS-DIGIB.TTF">
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=McLaren&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="/font/DS-DIGIB.TTF">
+
+</head>
+
+<body>
+    <section class="header">
+        <div class="container atas">
+            <div class="row justify-content-between">
+                <div class="col-md-9 nama-mesjid">
+                    <a href="#">
+                        <img src="/foto/Group 1.png" alt="mesjid" class="icon img-fluid">
+                    </a>
+                    <h1 class="al-barkah">Masjid Al-Barkah</h1>
+                    <p class="alamat">Jalan Pahlwan, Kampung Tengah, Belakang Polsek Cileungsi.</p>
+                </div>
+                <div class="col-md-3 waktu-mesjid">
+                    <div class="jam-atas">
+                        <h1 class="jam text-center" id="jam">09:22:22 </h1>
+                    </div>
+                    <h3 class="tanggal text-center" id="tanggal">Rabu, 22 Desember 2022</h3>
+                    <h5 class="tanggal-hijriah" id="tanggal-hijriah">28 Jumadil Awal 1444 H</h5>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Waktu Shalat -->
+    <section class="container waktu-salat">
+       <div class="waktu-salat2">
+        <div class="row">
+             <div class="col-md-2 as">
+                Hii
+             </div>
+             <div class="col-md-2">
+                Hii
+             </div>
+             <div class="col-md-2">
+                Hii
+             </div>
+             <div class="col-md-2">
+                Hii
+             </div>
+             <div class="col-md-2">
+                Hii
+             </div>
+        </div>
+       </div>
+    </section>
+    <!-- End Waktu Shalat -->
+
+    <!-- Teks Jalan -->
+    <footer class="w-100 fixed-bottom py-2 teks-jalan">
+        <marquee behavior="scroll" class="info">
+            <h3>Jadwal Kajian Senin : Ust. Fikri Hilabi "Persiapan Menuju Bulan Sucii Ramadhon"</h3>
+        </marquee>
+    </footer>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+    <!-- Jam Digital -->
+    <script type="text/javascript">
+        window.onload = function () {
+            jam();
+        }
+
+        function jam() {
+            var e = document.getElementById('jam'),
+                d = new Date(),
+                h, m, s;
+            h = d.getHours();
+            m = set(d.getMinutes());
+            s = set(d.getSeconds());
+
+            e.innerHTML = h + ' : ' + m + ' : ' + s;
+
+            setTimeout('jam()', 1000);
+        }
+
+        function set(e) {
+            e = e < 10 ? '0' + e : e;
+            return e;
+        }
+    </script>
+</body>
+
+</html>

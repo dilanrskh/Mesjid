@@ -1,0 +1,137 @@
+@font-face {
+    font-family: "FontDila";
+    src: url(/font/DS-DIGIB.TTF);
+}
+
+body {
+    background-image: url(/foto/mekkah1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: auto;
+    background-attachment: fixed;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.header {
+    .atas {
+        .row {
+            background-color: #2C2C2BE5;
+            height: 130px;
+            border-bottom-right-radius: 30px;
+            border-bottom-left-radius: 30px;
+
+            .nama-mesjid {
+                .icon {
+                    margin-top: 20px;
+                    margin-bottom: 20px;
+                    margin-left: 36px;
+                    margin-right: 28.42px;
+                    width: 115px;
+                    height: 77px;
+                    float: left;
+                }
+            }
+
+            .al-barkah {
+                color: white;
+                margin-top: 10px;
+                font-family: 'Inter Tight', sans-serif;
+                font-weight: 700;
+                font-size: 40px;
+                line-height: 60px;
+                align-items: center;
+            }
+
+            .alamat {
+                color: white;
+                margin-top: 3px;
+                font-family: 'Inter Tight', sans-serif;
+                font-style: italic;
+                font-weight: 400;
+                font-size: 20px;
+                align-items: center;
+            }
+
+            .waktu-mesjid {
+                background-color: #2C2C2B;
+                background-attachment: fixed;
+                border: 3px;
+                border-bottom-left-radius: 30px;
+                border-bottom-right-radius: 30px;
+                height: 180px;
+
+                .jam-atas {
+                    color: #FF7A00;
+                    background-color: #2C2C2B;
+                    border-style: solid;
+                    border-width: 1px;
+                    border-radius: 30px;
+                    margin-top: 15px;
+                    margin-left: 33px;
+                    margin-right: 33px;
+                    padding-bottom: 10px;
+                    padding-left: 11px;
+                    padding-right: 12px;
+                    width: 205px;
+                    height: 70px;
+                    background: linear-gradient(266.65deg, rgba(238, 238, 238, 0.02) 5.57%, rgba(253, 253, 253, 0.0284) 98.77%);
+                    border: 1px solid #FF7A00;
+                    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.25);
+
+                    .jam {
+                        color: #FF7A00;
+                        font-family: 'FontDila', sans-serif;
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 40px;
+                        line-height: 65px;
+                        text-align: center;
+                    }
+                }
+                .tanggal{
+                    color: #FFFFFF;
+                    margin-top: 18px;
+                    font-family: 'Inter Tight', sans-serif;
+                    font-weight: 700;
+                    font-size: 20px;
+                    line-height: 30px;
+                    align-items: center;
+                }
+                .tanggal-hijriah{
+                    color: #FFFFFF;
+                    margin-bottom: 10px;
+                    font-family: 'Inter Tight', sans-serif;
+                    font-style: italic;
+                    font-weight: 300;
+                    font-size: 20px;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
+
+// Teks Jalan
+.teks-jalan{
+    background-color: #606060;
+    opacity: 80%;
+    height: 50px;
+    .info{
+        color: #FFFFFF;
+        font-family: 'Inter Tight', sans-serif;
+        font-style: italic;
+        font-size: 15px;
+    }
+}
+
+// ss
+.waktu-salat{
+    .waktu-salat2{
+        display: absolute;
+        bottom: 10rem;
+        .row{
+           color: #FFFFFF;
+        }
+    }
+}
